@@ -28,10 +28,10 @@ public class TextMeshWordWrapPatch
         
         _resizeInProgress = true;
 
-        if (__instance.fontSize == 24)
+        /*if (__instance.fontSize == 24)
         {
             __instance.fontSize = 19;
-        }
+        }*/
         
         var textSize = new TextSize(__instance);
         if (textSize.Width <= MaxWidth)
@@ -47,7 +47,7 @@ public class TextMeshWordWrapPatch
     }
 }
 
-[HarmonyPatch(typeof(FlTextParameter), nameof(FlTextParameter._ApplyData))]
+/*[HarmonyPatch(typeof(FlTextParameter), nameof(FlTextParameter._ApplyData))]
 [HarmonyWrapSafe]
 public class FlTextParameterApplyDataFontSizePatch
 {
@@ -59,4 +59,4 @@ public class FlTextParameterApplyDataFontSizePatch
         }   
         __instance._fontSize = 19;
     }
-}
+}*/

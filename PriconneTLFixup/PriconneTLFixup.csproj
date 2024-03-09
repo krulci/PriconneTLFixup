@@ -13,6 +13,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Patches\ThousandsSeperatorPatch.cs" />
+      <Compile Remove="Patches\UIMovePatch.cs" />
+      <Compile Remove="Patches\UIResizePatch.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
         <Reference Include="Assembly-CSharp" Publicize="True">
             <HintPath>$(AppData)\BepInEx\PrincessConnectReDive\interop\Assembly-CSharp.dll</HintPath>
         </Reference>

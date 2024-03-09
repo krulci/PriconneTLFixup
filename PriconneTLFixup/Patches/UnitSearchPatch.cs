@@ -11,7 +11,7 @@ namespace PriconneTLFixup.Patches;
 [HarmonyWrapSafe]
 public class DictPatch
 {
-    private static readonly string DictPath = Path.Join(Paths.BepInExRootPath, "Translation", "en", "Other", "unit_names.txt");
+    private static readonly string DictPath = Path.Join(Paths.BepInExRootPath, "Translation", "zh-CN", "Other", "unit_names.txt");
 
     public static void Prepare()
     {

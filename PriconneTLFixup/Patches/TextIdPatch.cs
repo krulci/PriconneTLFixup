@@ -11,7 +11,7 @@ namespace PriconneTLFixup.Patches;
 public class TextIdPatch2
 {
     private static readonly string DictPath =
-        Path.Join(Paths.BepInExRootPath, "Translation", "en", "Other", "text_id.txt");
+        Path.Join(Paths.BepInExRootPath, "Translation", "zh-CN", "Other", "text_id.txt");
     
     public static void Postfix()
     {
